@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container .ribbon{
+    width: 100%;
+}
+.container .ribbon .reb{
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-color: rgb(228, 163, 228);
+    height: 60px;
+   float: right;
+   width:  150px;
+}
+.container .contain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container .contain .btn{
+    background-color: rgb(228, 163, 228);
+    padding: 7px 10px;
+    color: white;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+.container .contain .para{
+    padding: 10px 40px;
+    text-align: center;
+}
+
+.container .contain .dot{
+    width: 400px;
+    border-bottom:5px dotted rgb(228, 163, 228);
+    margin-top: 20px;
+}
+
+.container .contain .head1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#btn1{
+    width: 300px;
+    margin-top: 30px;
+}
+
+.teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.col{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.lead1{
+    border: 2px solid rgb(228, 163, 228);
+    padding: 20px;
+    border-radius: 8px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(228, 163, 228);
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.subTitle{
+    font-size: 16px;
+    color: rgb(228, 163, 228);
+    text-align: center;
+}
+.header{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.ribbon1{
+    clip-path: polygon(100% 0, 72% 51%, 100% 100%, 0% 100%, 0 46%, 0% 0%);
+    background-color: rgb(228, 163, 228);
+    height: 60px;
+   position: absolute;
+   left: 0;
+   width:  150px;
+}
+.ribbon2{
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-color: rgb(228, 163, 228);
+    height: 60px;
+   position: absolute;
+   right: 0;
+   width:  150px;
+}
+
+.ribbon3{
+    clip-path: polygon(100% 0, 72% 51%, 100% 100%, 0% 100%, 0 46%, 0% 0%);
+    background-color: rgb(228, 163, 228);
+    height: 60px;
+   width:  150px;
+   
+}
+@media only screen and (max-width: 620px) {
+    .header .ribbon2{
+        margin-bottom: 90px;
+    
+    }
+    .header .ribbon1{
+        margin-bottom: 90px;
+    
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .contain .dot{
+        width: 200px;
+    }
+}
